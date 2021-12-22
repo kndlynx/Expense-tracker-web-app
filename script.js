@@ -12,8 +12,13 @@
 	let transactions =
   		localStorage.getItem('transactions') !== null ? localStorageTransactions : [];
 	
-	
-	alert('Please always refresh page for updated Pie Chart!!');
+	<script type="text/javascript">
+  	  var alerted = localStorage.getItem('alerted') || '';
+  	  if (alerted != 'yes') {
+  	   alert("Please always refresh page for updated Pie Chart!!");
+ 	    localStorage.setItem('alerted','yes');
+ 	   }
+	</script>
 	function addTransaction(e) {
    		e.preventDefault();
   	if (text.value.trim() === '' || amount.value.trim() === '') {
