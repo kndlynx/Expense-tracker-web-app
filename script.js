@@ -12,18 +12,7 @@
 	let transactions =
   		localStorage.getItem('transactions') !== null ? localStorageTransactions : [];
 	
-	function Alerta() {
-	  // get the value from localStorage
-	  var person = localStorage.person
-	  if (!person) {
-	    // person has not been set so ask the user
- 	   person = prompt("¡Recuerda!:Todos Los Titulos Abren El Menu!\nCual es tu nombre?", "Goku");
-	    // set the person value in localStorage for next time
-  	  localStorage.person = person
-	  }
-	 // set the value of your intro
-	  document.getElementById("intro").innerHTML = person;
-	}
+	
 	alert('Please always refresh page for updated Pie Chart!!');
 	function addTransaction(e) {
    		e.preventDefault();
