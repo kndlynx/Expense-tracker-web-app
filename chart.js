@@ -1,5 +1,3 @@
-  <h2>Please refresh for updating Pie Chart</h2>
-    <div class="container">
 const ctx = document.getElementById('myChart').getContext('2d');
 const myChart = new Chart(ctx, {
     type: 'pie',
