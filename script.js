@@ -1,4 +1,3 @@
-
      	const balance = document.getElementById('balance');
 	const money_plus = document.getElementById('money-plus');
 	const money_minus = document.getElementById('money-minus');
@@ -18,7 +17,7 @@
   	if (text.value.trim() === '' || amount.value.trim() === '') {
     		alert('Please add a text and amount');
   	} else {
-		
+		alert('Please refresh page for updated Pie Chart!!');
     		const transaction = {
       		id: generateID(),
       		text: text.value,
