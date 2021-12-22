@@ -11,13 +11,14 @@
 	
 	let transactions =
   		localStorage.getItem('transactions') !== null ? localStorageTransactions : [];
-
+	
+	alert('Please always refresh page for updated Pie Chart!!');
 	function addTransaction(e) {
    		e.preventDefault();
   	if (text.value.trim() === '' || amount.value.trim() === '') {
     		alert('Please add a text and amount');
   	} else {
-		alert('Please refresh page for updated Pie Chart!!');
+		
     		const transaction = {
       		id: generateID(),
       		text: text.value,
